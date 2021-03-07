@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="title">Todo List</h1>
+      <nav>
+        <button class="toggle">Toggle Advanced</button>
+      <button class="help">HELP</button>
+      </nav>
+    </header>
+    
+    <div class="container">
+      <div class="left-menu-container">
+        <div class="left-menu">
+          <button class="add-category">Add category</button>
+          <input class="input-category"></input>
+          <!--   Categories go here   -->
+          <div class="categories-container">
+            <h3>Test 4</h3>
+            <h3>Test 4</h3>
+            <h3>Test 4</h3>
+    
+    
+          </div>
+        </div>
+      </div>
+      <div class="right-menu-container">
+            
+        <form class="todo-input" onsubmit="return false" autocomplete="off">
+
+        <button class="add-todo">Add Todo</button>
+        <input id="addTodo" placeholder="Enter to do item here" class="input-todo"></input>
+
+        <button class="add-description hidden">Add description</button>
+          <input class="input-description hidden"></input>
+        <button class="add-dueDate hidden">Add due date</button>
+          <input class="input-dueDate hidden"></input>
+
+        </form>
+      <div class="right-window">
+        <div class="todo-object">
+            <div class="due">3/14</div>
+                <h3 class="todo-title">Testing</h3>
+                <p class="todo-description">This is my todo object description</p>
+          <button class="remove">X</button>
+        </div>
+      </div>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>

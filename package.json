@@ -1,0 +1,31 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Todo List Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSoup/todo.git"
+  },
+  "keywords": [
+    "Todo",
+    "js",
+    "css",
+    "html",
+    "top"
+  ],
+  "author": "Dave L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MSoup/todo/issues"
+  },
+  "homepage": "https://github.com/MSoup/todo#readme",
+  "devDependencies": {
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
+  }
+}

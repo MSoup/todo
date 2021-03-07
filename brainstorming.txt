@@ -1,0 +1,22 @@
+Food for thought
+
+Categories is an object of 
+Key : List of todo objects
+
+Ex:
+
+Daily Life : [Todo OBJECT]
+
+--
+
+Todo objects contain
+title, description, dueDate and priority
+
+Title: name of todo
+Description: default is ""
+dueDate: uses date object?
+priority: low, medium, high?
+
+
+
+CLick on category card -> filter???

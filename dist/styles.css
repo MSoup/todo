@@ -1,0 +1,175 @@
+html,
+body {
+  margin: 0;
+  font-family: monospace, Courier;
+}
+
+header {
+  border: solid;
+  position: sticky;
+  top: 0;
+  background-color: grey;
+  z-index: 10;
+  display: flex;
+}
+
+#title {
+  margin: 15px;
+  flex: 1;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+button {
+  padding: 10px;
+  background: none;
+  transition: 0.1s ease-in-out;
+}
+
+button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background: none;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+h3 {
+  padding: 5px;
+  text-align: center;
+}
+input {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px;
+}
+
+button.add-category {
+  width: 100%;
+}
+button.help {
+  height: 100%;
+}
+.container {
+  position: sticky;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  color: black;
+  border: solid;
+  box-sizing: border-box;
+  top: 10vh;
+  left: 0;
+  height: 80vh;
+}
+
+.left-menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  position: sticky;
+  top: 0;
+  border: solid;
+  overflow-y: scroll;
+}
+
+.right-menu-container {
+  flex: 3;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  position: sticky;
+  top: 0;
+  border: solid;
+}
+
+.right-window {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-input {
+  display: flex;
+  top: 0;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.categories-container {
+  /*  This will hold all category card elements  */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+div::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+div::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+div::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.todo-object {
+  box-shadow: 2px 0 0 0 #888, 0 2px 0 0 #888, 2px 2px 0 0 #888,
+    /* Just to fix the corner */ 2px 0 0 0 #888 inset, 0 2px 0 0 #888 inset;
+  display: flex;
+}
+
+.remove {
+  margin-left: auto;
+  align-self: flex-start;
+  padding: 3px;
+}
+
+.due:before {
+  content: "Due: ";
+}
+
+.due {
+  position: absolute;
+  padding: 3px;
+}
+
+.todo-title {
+  width: 40%;
+  text-align: left;
+}
+.todo-description {
+  flex: 1;
+}
+
+.complete {
+  align-self: flex-end;
+}
+
+input {
+  font-size: 1.1rem;
+}
