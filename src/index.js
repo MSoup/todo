@@ -3,11 +3,18 @@ import {
   handleHelp,
   handleComplete,
   handleAddTodo,
+  handleRemove,
 } from "./buttons.js";
 
 // add event listeners
 const addTodo = document.querySelector(".add-todo");
+const addCategory = document.querySelector(".add-category");
+const rightWindow = document.querySelector(".right-window");
+
 addTodo.addEventListener("click", handleAddTodo);
+addCategory.addEventListener("click", handleAddCategory);
+rightWindow.addEventListener("click", handleComplete);
+rightWindow.addEventListener("click", handleRemove);
 
 class Todo {
   constructor(title, dueDate = "unknown", priority = 0, description = "") {
@@ -53,7 +60,6 @@ function makeTodo(todo) {
   const priority = document.createElement("div");
   const complete = document.createElement("button");
 
-  console.log(todo);
   title.className = "todo-title";
   container.className = "todo-object";
   description.className = "todo-description";
@@ -77,24 +83,27 @@ function makeTodo(todo) {
   return container;
 }
 
+// accepts category object
 function makeCategory(title) {
   const container = document.createElement("button");
-  container.className = "tag-" + title;
+  container.className = "tag";
   container.textContent = title;
   return container;
 }
 Test();
 
+// item: html DOM object
 function appendToDOM(item) {
   // item either goes into categories or into the right window
   const rightWindow = document.querySelector(".right-window");
   const categoryWindow = document.querySelector(".categories-container");
-
   // if its a todo object move it into the right window
   if (item.className === "todo-object") {
     rightWindow.appendChild(item);
-  } else if (item.className === "todo-object") {
+  } else if (item.className === "tag") {
     categoryWindow.appendChild(item);
+  } else {
+    console.log("This shouldn't run");
   }
 }
 

@@ -173,3 +173,7 @@ div::-webkit-scrollbar-thumb {
 input {
   font-size: 1.1rem;
 }
+
+.completed-todo {
+  background-color: chartreuse;
+}
